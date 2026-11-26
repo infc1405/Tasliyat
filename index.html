@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#121933">
+<title>تسلیت درگذشت مرحوم اکبر حامد اقدام</title>
+<meta name="description" content="عرض تسلیت به سعیده و شقایق عزیز به مناسبت درگذشت پدر بزرگوارشان، مرحوم اکبر حامد اقدام">
+<style>
+  /* اگر فایل فونت را در پوشه‌ی fonts بگذارید، به‌طور خودکار استفاده می‌شود؛ در غیر این صورت فونت‌های دستگاه */
+  @font-face {
+    font-family: "TitleFont";
+    src: local("Aref Ruqaa"), local("ArefRuqaa-Regular"),
+         url("fonts/title.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "BodyFont";
+    src: local("Vazirmatn"), local("Vazirmatn Regular"),
+         url("fonts/body.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  :root {
+    --lapis-deep: #121933;
+    --lapis: #1a2342;
+    --gold: #b99443;
+    --gold-text: #7a5c1b;
+    --turquoise: #2f7f86;
+    --cream: #f3ecda;
+
+    --title-font: "TitleFont", "Sakkal Majalla", "Traditional Arabic", "Noto Naskh Arabic", "Geeza Pro", "Damascus", serif;
+    --body-font: "BodyFont", "Segoe UI", Tahoma, "Noto Sans Arabic", "Geeza Pro", sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    background: var(--lapis-deep);
+    color: var(--lapis);
+    font-family: var(--body-font);
+    line-height: 2;
+    min-height: 100vh;
+    padding: 20px 12px 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .page { width: 100%; max-width: 480px; }
+
+  /* قاب اصلی */
+  .frame {
+    position: relative;
+    background: var(--cream);
+    border: 3px solid var(--gold);
+    outline: 1px solid var(--gold);
+    outline-offset: 4px;
+    text-align: center;
+  }
+
+  /* نوار اسلیمی بالا و پایین */
+  .band {
+    height: 42px;
+    background-color: var(--lapis);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Cpath d='M0 20C15 2 45 2 60 20S105 38 120 20' fill='none' stroke='%23b99443' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M30 7C24 13 26 21 32 24C36 18 35 12 30 7Z' fill='%23b99443'/%3E%3Cpath d='M90 33C96 27 94 19 88 16C84 22 85 28 90 33Z' fill='%23b99443'/%3E%3Ccircle cx='30' cy='2.6' r='1.8' fill='%232f7f86'/%3E%3Ccircle cx='90' cy='37.4' r='1.8' fill='%232f7f86'/%3E%3Ccircle cx='0' cy='20' r='2' fill='%23b99443'/%3E%3Ccircle cx='120' cy='20' r='2' fill='%23b99443'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto 100%;
+  }
+  .band + .inner { border-top: 1px solid var(--gold); }
+  .inner + .band { border-top: 1px solid var(--gold); }
+
+  /* گل‌های گوشه */
+  .corner {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    color: var(--gold);
+  }
+  .corner.tl { top: 52px; left: 8px; }
+  .corner.tr { top: 52px; right: 8px; }
+  .corner.bl { bottom: 52px; left: 8px; }
+  .corner.br { bottom: 52px; right: 8px; }
+
+  .inner { padding: 30px 28px 34px; }
+
+  .bism {
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+    color: var(--gold-text);
+    line-height: 1.6;
+  }
+
+  .verse {
+    font-family: var(--title-font);
+    font-size: 1.3rem;
+    color: var(--lapis);
+    line-height: 2.1;
+    margin-top: 2px;
+  }
+
+  /* قاب محرابی عکس */
+  .mehrab {
+    width: 78%;
+    margin: 22px auto 0;
+    padding: 6px;
+    border: 2px solid var(--gold);
+    border-radius: 999px 999px 4px 4px;
+    background: var(--cream);
+    box-shadow: 0 0 0 4px var(--lapis);
+  }
+  .mehrab img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: 50% 54%;
+    border-radius: 999px 999px 2px 2px;
+    filter: grayscale(1) contrast(1.03);
+    animation: reveal 2.2s ease-out both;
+  }
+  @keyframes reveal { from { opacity: 0; } to { opacity: 1; } }
+
+  h1 {
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: clamp(1.6rem, 7vw, 2.2rem);
+    line-height: 1.5;
+    margin-top: 30px;
+    text-wrap: balance;
+    color: var(--lapis);
+  }
+
+  .dua {
+    font-family: var(--title-font);
+    font-size: 1.2rem;
+    color: var(--gold-text);
+    margin-top: 2px;
+  }
+
+  .week {
+    font-size: 0.95rem;
+    color: var(--lapis);
+    opacity: 0.75;
+    margin-top: 2px;
+  }
+
+  .ornament {
+    width: 54px;
+    height: 54px;
+    margin: 18px auto 6px;
+    color: var(--gold);
+  }
+
+  h2 {
+    font-family: var(--title-font);
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.6;
+    color: var(--lapis);
+  }
+
+  .message {
+    font-size: 1.05rem;
+    line-height: 2.25;
+    margin-top: 8px;
+  }
+  .message .to {
+    display: block;
+    font-weight: 700;
+    color: var(--gold-text);
+    margin-bottom: 4px;
+  }
+
+  .sign {
+    margin-top: 26px;
+    font-size: 0.98rem;
+    color: var(--gold-text);
+    line-height: 1.9;
+  }
+  .sign strong {
+    display: block;
+    font-family: var(--title-font);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--lapis);
+  }
+
+  .credit {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--gold);
+    line-height: 1.8;
+  }
+  .credit span { unicode-bidi: isolate; letter-spacing: 0.04em; }
+
+  @media (max-width: 380px) {
+    .inner { padding: 26px 20px 30px; }
+    .corner { display: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mehrab img { animation: none; }
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="rosette" viewBox="-20 -20 40 40">
+      <g fill="none" stroke="currentColor" stroke-width="1.2">
+        <ellipse cx="0" cy="-11" rx="3.6" ry="7.5"/>
+        <ellipse cx="0" cy="-11" rx="3.6" ry="7.5" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-11" rx="3.6" ry="7.5" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-11" rx="3.6" ry="7.5" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-11" rx="3.6" ry="7.5" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-11" rx="3.6" ry="7.5" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-11" rx="3.6" ry="7.5" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-11" rx="3.6" ry="7.5" transform="rotate(315)"/>
+      </g>
+      <circle r="4.2" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<main class="page">
+  <div class="frame">
+    <div class="band" aria-hidden="true"></div>
+
+    <svg class="corner tl" aria-hidden="true"><use href="#rosette"/></svg>
+    <svg class="corner tr" aria-hidden="true"><use href="#rosette"/></svg>
+    <svg class="corner bl" aria-hidden="true"><use href="#rosette"/></svg>
+    <svg class="corner br" aria-hidden="true"><use href="#rosette"/></svg>
+
+    <div class="inner">
+      <p class="bism">بسمه تعالی</p>
+      <p class="verse">إِنَّا لِلّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ</p>
+
+      <div class="mehrab">
+        <img src="photo.jpg" alt="تصویر مرحوم اکبر حامد اقدام" width="900" height="1125">
+      </div>
+
+      <h1>مرحوم اکبر حامد اقدام</h1>
+      <p class="dua">روحشان شاد و یادشان گرامی</p>
+      <p class="week">هفتمین روز درگذشت</p>
+
+      <svg class="ornament" aria-hidden="true"><use href="#rosette"/></svg>
+
+      <h2>عرض تسلیت</h2>
+      <p class="message">
+        <span class="to">دختر عموهای گرامی، سعیده و شقایق عزیز</span>
+        در هفتمین روز درگذشت پدر بزرگوارتان، یاد ایشان را گرامی می‌داریم
+        و این ضایعه‌ی بزرگ را به شما و خانواده‌ی محترم تسلیت عرض می‌کنیم.
+        از درگاه خداوند متعال برای آن عزیز سفرکرده رحمت و آمرزش،
+        و برای شما صبر و آرامش مسئلت داریم.
+      </p>
+
+      <p class="sign">
+        غمخوار شما
+        <strong>ایرج و ملیحه</strong>
+      </p>
+    </div>
+
+    <div class="band" aria-hidden="true"></div>
+  </div>
+
+  <footer class="credit">
+    گروه فریلنسری <span dir="ltr">INFC.1405</span>
+  </footer>
+</main>
+
+</body>
+</html>
